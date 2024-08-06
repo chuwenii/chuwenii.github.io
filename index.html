@@ -1,1 +1,181 @@
-<h1>Hello </h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quantum Computing Research (Shi Jin's Group,Shanghai Jiaotong University)</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            color: #ffffff; /* General text color */
+            background-image: url('qcompbk2.jpg'); /* Ensure this is the path to your subdued background image */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-attachment: fixed; /* Keeps the background fixed during scrolling */
+        }
+        header, footer, section {
+            padding: 20px;
+            margin-top: 20px;
+            background-color: rgba(0, 0, 50, 0.8); /* Slight dark background for all sections */
+            border-radius: 10px;
+        }
+        h1, h2, h3 {
+            color: #ccddff; /* Lighter shade of blue for headers */
+        }
+        p, li {
+            color: #e6e6ff; /* Light greyish-blue color for paragraph text */
+            line-height: 1.6;
+        }
+        .navigation {
+            background-color: #004080; /* Dark blue background for navigation */
+            padding: 10px 0;
+            position: sticky;
+            top: 0;
+            display: flex;
+            justify-content: center;
+        }
+        .navigation a {
+            color: #ccdfff; /* Lighter text for navigation links */
+            padding: 10px 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .navigation a:hover {
+            background-color: #003366;
+        }
+        .columns {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .columns div {
+            flex: 1;
+            min-width: 300px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        footer {
+            text-align: center;
+            font-size: 0.8em;
+            color: #fff;
+            background-color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="navigation">
+        <a href="#about">About Us</a>
+        <a href="#research">Research</a>
+        <a href="#publications">Publications</a>
+        <a href="#team">Team</a>
+    </div>
+    <header>
+        <h1>Quantum Computing Research (Shi Jin's Group, Shanghai Jiaotong University)</h1>
+    </header>
+    <section id="about">
+        <h2>About Us</h2>
+        <p>Quantum computing harnesses many unique properties of quantum mechanics, such as quantum entanglement and superposition, offering distinct capabilities that exceed those of conventional computing apparatus. Our overarching objective is to devise efficient quantum algorithms tailored to address scientific computational issues, particularly those that present formidable challenges to classical computers.</p>
+    </section>
+    <section id="research">
+        <h2>Our Research</h2>
+        <div class="columns">
+            <div>
+                <h3>Hamiltonian Simulations</h3>
+                <p>Hamiltonian simulation algorithms involve constructing a quantum circuit that performs the unitary transformation U associated with a Hamiltonian operator H. They are important building blocks for many other quantum computing algorithms. Our work focuses on Hamiltonian simulations for multi-scale quantum dynamics [4] and stochastic implementations of quantum dynamics in the second quantization form.</p>
+                <h3>Open Quantum Systems</h3>
+                <p>In practice, quantum systems are inevitably subject to environmental noise. We design both quantum and classical algorithms to effectively simulate the behavior of these open quantum systems. In addition, we develop mathematical models for quantum dynamics outside the Markovian regime.</p>
+                <h3>Optimal Control</h3>
+                <p>Quantum systems can be guided to perform specific tasks or maximize certain physical properties. We designed quantum algorithms for QOC problems with precise error bound and complexity estimates.</p>
+            </div>
+            <div>
+                <h3>Applications to material science</h3>
+                <p>First-principle calculations in material science eliminate the need for empirical assumptions and possess the potential to predict material properties with quantum-level precision. The aim of our projects is to employ quantum algorithms in these first-principle computations, enabling the consideration of significantly larger systems and facilitating a direct connection between electronic structures and macroscale behavior.</p>
+                <h3>Quantum Algorithms for Partial Differential Equations (PDE)</h3>
+                <p>We create quantum algorithms specifically designed to solve partial differential equations, particularly in situations where the numerical discretization results in a high degree of freedom.</p>
+                <h3>Quantum Sampling</h3>
+                <p>Markov chains play a central role in modern data science algorithms. We construct algorithms that mix a Markov chain with quantum speedup.</p>
+                <h3>Quantum Machine Learning</h3>
+                <p>QML uses parameterizing quantum circuits to approximate unknown functions. Our focus is to analyze the role of measurement noise in the learning procedure.</p>
+            </div>
+        </div>
+        <section id="research">
+        <h2>Funding Support</h2>
+        
+         <div class="member-info">
+            <h3>NSF: "Optimal Control of Open Quantum Systems", $395,291, 2021--2025. </h3>
+            <h3>ICDS: "Machine-Learning with Quantum Speedup", $30,000, 2023. </h3> 
+            <h3>NSF: "An Integrated Framework for Optimal ControlforOpenQuantumSystems---Theory, Quantum Algorithms, and Applications", $600,000, 2023--2026. </h3>
+             <h3>NSF: "Improving quantum speedup for solving differential equations", $300,000, 2024--2027. </h3>
+        </div> 
+        
+    </section>
+    <section id="publications">
+        <h2>Publications</h2>
+        <ol reversed>
+            <li><strong>Hsuan-Cheng Wu, Jiayao Wang and  Xiantao Li, <a href="http://arxiv.org/abs/2405.12714">Quantum Algorithms for Nonlinear Dynamics: Revisiting Carleman
+  Linearization with No Dissipative Conditions,</a>
+  </strong></font> <em> preprint, 2024. </em></li>  
+           <li><strong>Wenhao He, Tongyang Li,  Xiantao Li  Zecheng Li, Chunhao Wang and Ke Wang, <a href="https://arxiv.org/abs/2311.15533">Efficient Optimal Control of Open Quantum Systems,</a>
+  </strong></font> <em> TQC, 2024. </em></li>  
+        <li><strong>Zhiyan Ding, Xiantao Li and Lin Lin, <a href="https://doi.org/10.1103/PRXQuantum.5.020332">Simulating Open Quantum Systems Using Hamiltonian Simulations,</a></strong> <em> PRX Quantum, 5, 020332, 2024.</em></li>
+        <li><strong>Zhiyan Ding, Taehee Ko, Jiahao Yao, Lin Lin, and Xiantao Li, <a href="https://arxiv.org/abs/2311.00088">Random coordinate descent: a simple alternative for optimizing parameterized quantum circuits,</a></strong> <em>Physical Review Research, 2024.</em></li>
+        <li><strong>Guneykan Ozgul, Xiantao Li, Mehrdad Mahdavi, Chunhao Wang, <a href="https://arxiv.org/abs/2310.11445">Stochastic Quantum Sampling for Non-Logconcave Distributions and Estimating Partition Functions,</a></strong> <em>ICML, 2024.</em></li>
+        <li><strong>With Taehee Ko and Chunhao Wang, <a href="http://arxiv.org/abs/2307.03858">Implementation of the Density-functional Theory on Quantum Computers with Linear Scaling with respect to the Number of Atoms,</a></strong> <em>Preprint, 2023.</em></li>
+        <li><strong>With Ke Wang, <a href="http://arxiv.org/abs/2307.03858">Simulation-assisted learning of open quantum systems,</a></strong> <em>Preprint, 2023.</em></li>
+        <li><strong>With Jin, Liu, Yu, <a href="https://doi.org/10.1016/j.jcp.2023.112707">Quantum Simulation for Partial Differential Equations with Physical Boundary or Interface Conditions.,</a></strong> <em>Journal of Computational Physics, Vol 498, 112707, 2024.</em></li>
+        <li><strong>With Jin, Liu, Yu, <a href="https://arxiv.org/abs/2304.00667v1">Quantum Simulation for Quantum Dynamics with Artificial Boundary Condition,</a></strong> <em>SIAM Journal on Scientific Computing, 2024.</em></li>
+        <li><strong>With C. Wang, <a href="http://proceedings.mlr.press/v202/li23ab/li23ab.pdf">Efficient Quantum Algorithms for Quantum Optimal Control,</a></strong> <em>Proceedings of the 40th International Conference on Machine Learning (ICML), 2023.</em></li>
+        <li><strong>With C. Wang, <a href="https://drops.dagstuhl.de/opus/volltexte/2023/18139/pdf/LIPIcs-ICALP-2023-87.pdf">Efficient Simulating Markovian open quantum systems using higher-order series expansion,</a></strong> <em>50th International Colloquium on Automata, Languages, and Programming (ICALP), 2023.</em></li>
+        <li><strong><a href="https://arxiv.org/abs/2210.14088">Enabling Quantum Speedup of Markov Chains using a Multi-level Approach,</a></strong> <em>Preprint, 2022.</em></li>
+        <li><strong>With S. Jin and Nana Liu, <a href="https://arxiv.org/abs/2112.13279">Hamiltonian Simulation in the semi-classical regime</a></strong> <em>Quantum, Vol 6, pp 739, 2022.</em></li>
+        <li><strong>X Li, <a href="https://iopscience.iop.org/article/10.1088/1751-8121/ac7f6c/meta">Some Error Analysis for the Quantum Phase Estimation Algorithms</a></strong> <em>Journal of Physics A: Mathematical and Theoretical, 2022.</em></li>
+        <li><strong>With Chunhao Wang, <a href="https://doi.org/10.1007/s00220-023-04638-4">Succinct Description and Efficient Simulation of Non-Markovian Open Quantum Systems</a></strong> <em>Communications in Mathematical Physics, Vol 401, pages 147–183, 2023.</em></li>
+        <li><strong>With Shi Jin, <a href="https://doi.org/10.1007/s42967-023-00336-z">A Partially Random Trotter Algorithm for Quantum Hamiltonian Simulations,</a></strong> <em>Communications on Applied Mathematics and Computation, 2023.</em></li>
+    </ol>
+    </section>
+    <section id="team">
+        <h2>Our Team</h2>
+        <div class="columns">
+            <div class="member-info">
+                <h3>Xiantao Li</h3>
+            <p>Professor, Penn State.</p>
+        </div>
+           <div class="member-info">
+            <h3>Hsuan-Cheng Wu</h3>
+            <p>Graduate Student.</p>
+        </div> 
+            <div class="member-info">
+            <h3>Taehee Ko</h3>
+            <p>Graduate Student.</p>
+        </div>
+        <div class="member-info">
+            <h3>Ke Wang</h3>
+            <p>Graduate Student.</p>
+        </div>
+        <div class="member-info">
+            <h3>Pegah Mohammadipour</h3>
+            <p>Graduate Student.</p>
+        </div>
+        <div class="member-info">
+            <h3>Ryan Cohen</h3>
+            <p>Undergraduate Student.</p>
+        </div>
+            <div class="member-info">
+            <h3>George Klimov</h3>
+            <p>Undergraduate Student.</p>
+        </div>
+            <div class="member-info">
+            <h3>Loc Phan</h3>
+            <p>Undergraduate Student.</p>
+        </div>
+            <!-- More team members entries can be added in similar divs -->
+        </div>
+    </section>
+    <footer>
+        <p>Contact information: Xiantao.Li AT PSU DOT EDU.</p>
+    </footer>
+</body>
+</html>
